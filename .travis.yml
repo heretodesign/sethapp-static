@@ -5,21 +5,21 @@ services:
 
 before_install:
   # - docker build -f Dockerfile.dev .
-  - docker build -t abelregov/docker-react -f Dockerfile.dev .
+  - docker build -t heretodesign/sethapp-static -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true abelregov/docker-react yarn run test
+  - docker run -e CI=true heretodesign/sethapp-static yarn run test
   # - docker run -e CI=true USERNAME/docker-react yarn run test
 
 deploy:
   provider: elasticbeanstack
   # provider: digitaloceans
-  region: "us-west-2"
-  name: "docker-react"
+  region: "ap-southeast-1"
+  name: "sethapp-static"
   env: "Docker-env"
-  bucket_name: "s3 instance bucket name"
-  bucket_path: "docker-react"
+  bucket_name: "sethstatic"
+  bucket_path: "sethapp-static"
   on: 
-    branch: main
+    branch: PROD
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
