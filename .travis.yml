@@ -12,7 +12,7 @@ script:
   # - docker run -e CI=true USERNAME/docker-react yarn run test
 
 deploy:
-  provider: elasticbeanstack
+  provider: s3
   # provider: digitaloceans
   region: "ap-southeast-1"
   name: "sethapp-static"
@@ -23,3 +23,5 @@ deploy:
     branch: PROD
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
+  skip_cleanup: true
+  local_dir: build

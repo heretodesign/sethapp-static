@@ -1,0 +1,73 @@
+    // const POSTREQUESTDATA =  async (data: any) => {
+    //     try {
+    //         const BaseURL="http://localhost:7000/api/v1/contacts"
+    //         const response: any = await axios({
+    //             method: 'POST',
+    //             url: BaseURL,
+    //             data: { data }
+    //         })
+    //         return response
+    //         alert(JSON.stringify(response))
+    //     } catch (error) {
+    //         console.log('CONTACT US ERROR', error.message);
+    //     }
+    // }
+
+
+    // const onSubmit = async (data) => {
+    // const formData = new FormData()
+    // formData.append("picture", data.picture[0])
+
+    // const res = await fetch("http://localhost:4000/picture", {
+    //     method: "POST",
+    //     body: formData
+    // }).then(res => res.json())
+    // alert(JSON.stringify(res))
+    // alert(JSON.stringify(data))
+    // }
+
+
+session expiry: for omni
+
+Hi team as discussed earlier during scrum, please come on Thursday and Friday for us to plan and discuss the effort and timeline for 1A2
+Please take into account our processes, from this exercise our goal is to come up with;
+a. how complex each task is,
+b. how valuable task is to the customer,
+c. in what priority and sequence to do the tasks
+d. come up with a high level estimate
+1. A Work Breakdown Structure
+Example
+  Building a house
+       1. Basement
+            1.1. Lay Foundation
+                    1.1.1. Dig the ground
+            1.2. Put in cement
+            1.3. Laydown plaster
+            1.4. Setup door
+       2. Kitchen
+           2.1. Lay down foundation
+                    2.1.1. Dig the ground
+           2.2. Plan the stove area
+           2.3. Put in built cabinets
+                     2.3.1. Measure and cut wood
+2. All participants will be requested to vote on the confidence of the tasks - this will affect your credibility, so please vote wisely
+Level 1 - Uncertain possibly 50% deviation margin
+Level 2 - Fairly certain, with a 20% deviation margin
+Level 3 - Very certain, with no deviation margin
+
+WHAT IS A TECH LED?
+It is a senior software engineer who has risen to become a single point of contact for the Engineering Manager, Product Manager, design teams, or other teams to communicate with.
+TL helps with scopping, Project Management, mentoring other juniors, approving design patterns, 
+
+Updates for the acceptable date format for the Masterfund, Nav & distribution. 
+
+SONAR
+289HDSHJ2284J4829393882: aec07394a5dd271b2916e2dad069b1bb9b0c5794
+
+
+docker run \
+    --rm \
+    -e SONAR_HOST_URL=http://localhost:9000 \
+    -e SONAR_LOGIN=aec07394a5dd271b2916e2dad069b1bb9b0c5794 \
+    -v "${YOUR_REPO}:/usr/src" \
+    sonarsource/sonar-scanner-cli
