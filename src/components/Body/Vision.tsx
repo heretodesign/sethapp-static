@@ -1,5 +1,5 @@
 import React from 'react'
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import imgOffice from '../../assets/emily-rusch-6dCicDMhMjk-unsplash.png'
 import styled from 'styled-components'
 

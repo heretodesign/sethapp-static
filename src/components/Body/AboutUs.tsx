@@ -1,5 +1,5 @@
 import React from 'react'
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import imgOffice from '../../assets/dimitry-anikin-ATyawSn-NsE-unsplash.png'
 import styled from 'styled-components'
 

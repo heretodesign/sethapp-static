@@ -1,5 +1,5 @@
 import React from "react"
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
 import imgOffice from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'

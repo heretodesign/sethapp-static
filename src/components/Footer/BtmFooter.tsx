@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGasPump,faBook } from '@fortawesome/free-solid-svg-icons'
 import fck from '../../assets/svg/10502791911556105704.svg'

@@ -52,7 +52,7 @@ const ContactForm: React.FC = () => {
             window.location.href = '/contact-success';
 
         } catch (error) {
-            console.log('FORMDATA SUBMISSION FAILED', error.message);
+            console.log('FORMDATA SUBMISSION FAILED', error);
         }
     }
 

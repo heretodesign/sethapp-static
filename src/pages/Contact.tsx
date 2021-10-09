@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link, Redirect, useHistory } from "react-router-dom"
 import styled from 'styled-components'
 import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'

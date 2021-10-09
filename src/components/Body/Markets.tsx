@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Button, Columns} from "react-bulma-components/full"
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import imgfice from '../../assets/pexels-asad-photo-maldives-240524.jpg'
 import newD from '../../assets/jay-skyler-4vkqO73C7O8-unsplash.jpg'
 import mine from '../../assets/pexels-ivan-3089685.jpg'

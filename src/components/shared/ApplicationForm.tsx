@@ -79,7 +79,7 @@ const ApplicationForm: React.FC = () => {
             window.location.href = '/application-success';
 
         } catch (error) {
-            console.log('FORMDATA SUBMISSION FAILED', error.message);
+            console.log('FORMDATA SUBMISSION FAILED', error);
         }
     }
 

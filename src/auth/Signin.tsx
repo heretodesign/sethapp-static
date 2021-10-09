@@ -1,6 +1,6 @@
 
 import React from 'react'
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link, Redirect, useHistory } from "react-router-dom"
 import styled from 'styled-components'
 import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
@@ -25,7 +25,7 @@ const LinkBtn = styled(Link)`
   }
 	@media (max-width: 768px) { 
 		width: 450px; 
-		padding: 10px;
+		padding: 10px; 
 	}
 
   @include phone {
@@ -135,8 +135,8 @@ const Signin = () => {
     })
       .then(response => {
         console.log('SIGNIN SUCCESS', response);
-        console.log('TOKEN', response.data.token);
-        console.log('ROLE', response.data.user.role);
+        // console.log('TOKEN', response.data.token);
+        // console.log('ROLE', response.data.user.role);
         debugger
 
         // save the response (user, token) locastorage/cookie
@@ -156,8 +156,8 @@ const Signin = () => {
         }
         
         /*** @callRoleBasedRedirect */
-        const { role } = response.data.user
-        roleBasedRedirect(role)
+        // const { role } = response.data.user
+        // roleBasedRedirect(role)
       })
       .catch((error: { response: { data: { error: ToastContent } } }) => {
         console.log('SIGNIN ERROR', error.response.data);

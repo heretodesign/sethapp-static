@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import imgOffice from '../../assets/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg'
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import styled from 'styled-components'
 
 

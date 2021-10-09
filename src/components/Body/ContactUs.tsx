@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import styled from 'styled-components'
 
 const ContactUs: React.FC = () => {

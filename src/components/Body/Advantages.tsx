@@ -1,6 +1,6 @@
 import React from 'react'
 import imgOffice from '../../assets/shaah-shahidh--subrrYxv8A-unsplash.png'
-import 'react-bulma-components/dist/react-bulma-components.min.css'
+// import 'react-bulma-components/dist/react-bulma-components.min.css'
 import styled from 'styled-components'
 
 const AdvParagraph = styled.p`
