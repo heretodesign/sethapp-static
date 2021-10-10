@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
+import logo from '../../assets/sethlogo.png'
 
 const Span = styled.span`
     color: white;
@@ -152,7 +153,7 @@ const Navbar: React.FC = () => {
                             <Link className="navbar-item"
                             to="/"
                             >
-                            <strong className="has-text-white is-2">Seth Resources Petroleum</strong>
+                            <img src={logo} />
                             </Link>
                             <span className="navbar-burger burger" data-target="navbarMenuHeroA">
                             <span></span>
