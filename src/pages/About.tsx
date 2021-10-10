@@ -164,7 +164,7 @@ const About: React.FC = () => {
     return (
         <>
         <Navbar />
-        <Section className="section is-paddingless-horizontal">
+        <Section className="section is-paddingless-horizontal" style={{ background: '#003468', color: 'white' }}>
           <br />
           <br />
           <div className="container grid is-large">
