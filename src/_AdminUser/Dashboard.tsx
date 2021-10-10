@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import { ContactsProps, jobApplicationProps } from '../interface/'
-import { AdminNav } from '../components/Header/AdminNav'
+import { AdminNav } from '../components/Header/'
 // import { ListApplications } from './JobApplications';
 
 const Dashboard = () => {

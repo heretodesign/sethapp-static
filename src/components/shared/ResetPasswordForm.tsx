@@ -35,7 +35,7 @@ const ResetPasswordForm: React.FC = () => {
             alert('SENT')
             window.location.href = '/';
         } catch (error) {
-            console.log('FORMDATA SUBMISSION FAILED', error);
+            console.log('FORMDATA SUBMISSION FAILED', error.message);
         }
     }
 

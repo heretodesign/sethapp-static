@@ -63,7 +63,7 @@ const SigninForm: React.FC = () => {
             roleBasedRedirect(role)
 
         } catch (error) {
-            console.log('FORMDATA SUBMISSION FAILED', error);
+            console.log('FORMDATA SUBMISSION FAILED', error.message);
         }
     }
 

@@ -52,7 +52,7 @@ export const userSignIn = ({email, password}: UserProps) => {
         email,
         password,
       })
-      .then((response: any) => {
+      .then((response) => {
         console.log('SIGNIN SUCCESS', response);
         if (response.data.accessToken) {
             sessionStorage.setItem("user", JSON.stringify(response.data));

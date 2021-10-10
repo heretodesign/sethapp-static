@@ -1,5 +1,5 @@
 import React from 'react'
-// import 'react-bulma-components/dist/react-bulma-components.min.css'
+import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
 import Navbar from '../components/Header'

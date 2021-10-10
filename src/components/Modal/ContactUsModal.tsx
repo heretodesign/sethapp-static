@@ -2,7 +2,7 @@ import React from 'react'
 import { Redirect } from 'react-router-dom';
 import { Link } from "react-router-dom"
 import imgOffice from '../../assets/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg'
-// import 'react-bulma-components/dist/react-bulma-components.min.css'
+import 'react-bulma-components/dist/react-bulma-components.min.css'
 import styled from 'styled-components'
 import Navbar from '../Header/Navbar'
 
