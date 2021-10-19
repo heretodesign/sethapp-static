@@ -1,18 +1,15 @@
-# FROM node:alpine
-# For PROD Deployment
-FROM node:alpine as builder
+FROM node:14-slim as builder
 
-WORKDIR '/app'
-# COPY package.json .
-COPY package*.json ./
+WORKDIR /usr/src/app
 
-RUN yarn install
+COPY ./package*.json ./
+
+RUN npm install
+
 COPY . .
-RUN yarn run build
 
-FROM nginx
-EXPOSE 80
-# COPY --from=0 /app/build /usr/share/nginx/html
+ARG BASE_URL
 
-# For PROD Deployment
-COPY --from=builder /app/build /usr/share/nginx/html
+ENV REACT_APP_BASE_URL=${BASE_URL}
+
+RUN npm run build

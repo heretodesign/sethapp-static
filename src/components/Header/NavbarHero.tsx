@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
-import logo from '../../assets/logoseth.png'
+import logo from '../../assets/logos.png'
+// import logo from '../../assets/sethlogo.png'
+
 
 const TopDiv = styled.div`
     background: #ed6d23;
