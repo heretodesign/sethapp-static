@@ -106,7 +106,7 @@ export const Apply: React.FC<ApplyProps> = ({ history }) => {
                         <div className="column">
                           <div className="content">
                               <TopPara className="subtitle is-6 has-text-left is-uppercase">Apply for role</TopPara>
-                              <HeaderTitle className="subtitle has-text-left is-2">Opportunities – at Seth Resources Petroluem</HeaderTitle>
+                              <HeaderTitle className="subtitle has-text-left is-2">Opportunities – at Seth Resources Petroleum</HeaderTitle>
                               <MainPara className="has-text-left">
                               In a dynamic atmosphere, diverse teams collaborate on projects, taking ideas from the drawing board to implementation. We're all curious, and everyone is hungry for a challenge.
                               <br />

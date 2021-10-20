@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
-import logo from '../../assets/logos.png'
-// import logo from '../../assets/sethlogo.png'
-
+import logo from '../../assets/logo.png'
 
 const TopDiv = styled.div`
     background: #ed6d23;
@@ -23,22 +21,27 @@ const TopPara = styled.p`
     width: 100%;
 `
 const LinkContact = styled(Link)`
-  background: #003468;
-  color: white;
+  color: #003468;
+  background: transparent;
   font-weight: bold;
   padding-right: 25px;
   padding-left: 25px;
-  border-color: transparent;
+  border-color: #003468;
+  border-width: 2px;
 
   &:hover {
-    background-color: #003468;
-    color: white;
+    color: #ed6d23;
+    background: transparent;
+    border-color: transparent;
+    border-width: 2px;
   }
 
   @include tablet {
     font-size: 1.2rem;
     margin-top: 1px;
-    background: #fba502;
+    // background: #fba502;
+    color: #003468;
+    background: transparent;
   }
 	@media (max-width: 768px) { 
 		width: 450px; 
@@ -48,6 +51,23 @@ const LinkContact = styled(Link)`
   @include phone {
     font-size: 1rem;
     margin-top: 1px;
+  }
+`
+const SpanText = styled.span`
+  color: #003468;
+  ${LinkContact} {
+    background: transparent;
+    color: #003468;
+  }
+
+    ${LinkContact}:hover {
+        background: transparent;
+        color: #ed6d23;
+    }
+`
+
+const B = styled.div`
+  ${LinkContact} {
   }
 `
 const LinkNav = styled(Link)`
@@ -70,10 +90,10 @@ const LinkNav = styled(Link)`
     margin-top: 1px;
   }
 
-  &:hover {
-    background-color: #003468;
-    color: white;
-  }
+  // &:hover {
+  //   background-color: #003468;
+  //   color: white;
+  // }
 `
 
 const LinkBtn = styled(Link)`
@@ -104,7 +124,7 @@ const LinkBtn = styled(Link)`
 const MainTitle = styled.p`
   color: #fff;
   font-family: sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.4rem;
   font-weight: 600;
 
   @media (max-width: 768px) { 
@@ -113,7 +133,6 @@ const MainTitle = styled.p`
     font-size: 2.4rem;
     font-weight: 500;
     text-align: center;
-
 	}
 `
 
@@ -132,13 +151,13 @@ const MainParagraph = styled.p`
 const SpanColor = styled.span`
   color: #fba502;
   font-family: sans-serif;
-  font-size: 3.8rem;
+  font-size: 4rem;
   font-weight: 600;
 
   @media (max-width: 768px) { 
     color: #fba502;
     font-family: sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 500;
     text-align: center;
 	}
@@ -171,6 +190,17 @@ const Button = styled.button`
 const IMG = styled.img`
   min-height: 3.25rem
 `
+const SpanTitle = styled.span`
+  font-size: 4rem;
+
+  @media (max-width: 768px) { 
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-align: center;
+	}
+`
 const NavbarHero: React.FC = () => {
   return (
     <>
@@ -187,11 +217,11 @@ const NavbarHero: React.FC = () => {
             </div>
         </div>
         <div className="hero-head">
-          <nav className="navbar is-transparent">
+          <nav className="navbar is-transparent" style={{ background: '#e3f4fc', color: '#003468;'}}>
             <div className="container">
-              <div className="navbar-brand" id="logoStyle">
+              <div className="navbar-brand" id="logoStyles">
                 <Link className="navbar-item"
-                  to="/"
+                  to="/" style={{ background: 'transparent'}}
                   >
                   <IMG src={logo}  />
                 </Link>
@@ -202,10 +232,11 @@ const NavbarHero: React.FC = () => {
                 </span>
               </div>
               <div id="navbarMenuHeroA" className="navbar-menu">
-                <div className="navbar-end">
+                <div className="navbar-end" style={{ color: '#003468' }}>
                   <LinkNav 
                       to="/" 
-                      className="navbar-item has-text-weight-semibold" 
+                      className="navbar-item has-text-weight-semibold"
+                       
                       >
                       Home
                   </LinkNav>
@@ -248,12 +279,12 @@ const NavbarHero: React.FC = () => {
                     </LinkContact>
                   </span> */}
                   <span className="navbar-item">
-                    <LinkContact 
-                        to="/admin-signin" 
-                        className="navbar-item button is-fullwidth has-text-weight-semibold" 
-                        >
-                        Employee Signin
-                    </LinkContact>
+                  <LinkContact 
+                      to="/admin-signin" 
+                      className="navbar-item button has-text-weight-semibold" 
+                      >
+                      <SpanText style={{ color: '#003468' }}>Employee Login</SpanText>
+                  </LinkContact>
                   </span>
                 </div>
               </div>
@@ -268,7 +299,7 @@ const NavbarHero: React.FC = () => {
                 <div className="columns">
                   <div className="column is-three-fifths">
                     <MainTitle className="subtitle has-text-left">
-                      Seth Resources <SpanColor>Petroleum</SpanColor> – Specializing in Petroleum Transportation
+                      <SpanTitle>Seth Resources <SpanColor>Petroleum</SpanColor></SpanTitle> – Specializing in Petroleum Transportation
                     </MainTitle>
                   </div>
                 </div>

@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
                     <div className="column">
                       <div className="content">
                         <TopPara className="subtitle is-6 has-text-left is-uppercase">Ways to reach us</TopPara>
-                        <HeaderTitle className="subtitle has-text-left is-2">Contact Us – at Seth Resources Petroluem</HeaderTitle>
+                        <HeaderTitle className="subtitle has-text-left is-2">Contact Us – at Seth Resources Petroleum</HeaderTitle>
                         <MainPara className="has-text-left">
                           Our world class team of dedicated support will get back to within the next 2 hours upon receiving your inquiry.
                         </MainPara>
