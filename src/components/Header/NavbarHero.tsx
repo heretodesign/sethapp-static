@@ -307,7 +307,7 @@ const NavbarHero: React.FC = () => {
                   <div className="column is-half">
                     <MainParagraph className="has-text-lefts"> We are your co-pilot:
                       from remote regions to cities and beyond borders, with our fleet of delivery fuel tankers & vehicles,
-                      SPR offers comfortable, realiable solutions to ensure that your petroleum delivery are made on time, every time. 
+                      SRP offers comfortable, realiable solutions to ensure that your petroleum delivery are made on time, every time. 
                     </MainParagraph>
                   </div>
                 </div>
