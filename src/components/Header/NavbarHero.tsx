@@ -204,7 +204,7 @@ const SpanTitle = styled.span`
 const NavbarHero: React.FC = () => {
   return (
     <>
-      <section className="hero is-primary is-medium imgLanding">
+      <section className="hero is-medium imgLanding">
         <div className="is-paddingless-horizontal topNav">
             <div className="container-fluid grid">
                 <TopDiv className="devsection">

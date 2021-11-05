@@ -7,10 +7,10 @@ import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplas
 import newD from '../assets/christina-wocintechchat-o-Q8IgAlmHAUA-unsplash.png'
 import mine from '../assets/christina-wocintechchat-com-4PU-OC8sW98-unsplash.png'
 import kaelo from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'
-import coo from '../assets/coo.jpeg'
+import coo from '../assets/coo_900x664.jpg'
 import ceo from '../assets/ceoone.jpeg'
 import finance from '../assets/ceotwo.jpeg'
-import marketing from '../assets/marketing.jpeg'
+import marketing from '../assets/marketing_900x664.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDesktop, faIndustry, faChalkboardTeacher, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 
