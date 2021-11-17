@@ -8,30 +8,74 @@ import twitter from '../../assets/svg/home.svg'
 import gear from '../../assets/svg/gear.svg'
 import skype from '../../assets/svg/chat-bubble.svg'
 
+const Section = styled.section`
+    margin-bottom: 10pm;
+    margin-top: 10pm;
+`
+const Img = styled.img`
+  height: fit-content;
+  width: 130px;
+
+  @media (max-width: 768px) { 
+    height: fit-content;
+    width: 110px;
+	}
+`
+const MainTitle = styled.div`
+  color: #003468;
+  font-size: 2.2rem;
+  font-weight: 400;
+  ont-family: 'Open Sans',sans-serif;
+
+  @media (max-width: 768px) { 
+    color: #003468;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+
+	}
+`
+const MainParagraph = styled.p`
+  color: #003468;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 5px 15px;
+
+  @media (max-width: 768px) { 
+    color: #003468;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 5px 15px;
+	}
+`
 const Cards: React.FC = () => {
   return (
     <>
-     <section className="section is-paddingless-horizontal" id="icard">
+     <Section className="section is-paddingless-horizontal" id="icard">
         <div className="container grid is-large">
             <div className="firstsection">
                 <div className="content">
                 <div className="columns">
                 <div className="column is-one-third">
-                    <MainIcon className="has-text-centered"><span><Image className="content" src={gear} height="150" width="160" alt="office" /></span></MainIcon>
+                    <MainIcon className="has-text-centered">
+                        <span>
+                          <Img className="content" src={gear}  alt="office" />
+                        </span>
+                    </MainIcon>
                     <MainTitle className="has-text-centered">Reliable</MainTitle>
                     <MainParagraph className="has-text-centered">
                         Achieve 15% higher on-time delivery that ensure your business operates as usual.
                     </MainParagraph>
                 </div>
                 <div className="column is-one-third">
-                    <MainIcon className="has-text-centered"><span><img className="content" height="150" width="160" src={skype} alt="office" /></span></MainIcon>
+                    <MainIcon className="has-text-centered"><span><Img className="content" height="150" width="160" src={skype} alt="office" /></span></MainIcon>
                     <MainTitle className="has-text-centered">Easy</MainTitle>
                     <MainParagraph className="has-text-centered">
                         Minimize the complexity of your supply chain, and save 30% on administrative work.
                     </MainParagraph>
                 </div>
                 <div className="column is-one-third">
-                  <MainIcon className="has-text-centered"><span><img className="content" height="150" width="160" src={twitter} id="imgCover" alt="office" /></span></MainIcon>
+                  <MainIcon className="has-text-centered"><span><Img className="content" height="150" width="160" src={twitter} id="imgCover" alt="office" /></span></MainIcon>
                   <MainTitle className="has-text-centered">Efficient</MainTitle>
                   <MainParagraph className="has-text-centered">
                     Streamline and optimize your transportation & logistics processes, and reduce your overall cost by 15%
@@ -42,13 +86,13 @@ const Cards: React.FC = () => {
               </div>    
              </div>
         </div>
-     </section>
+     </Section>
     </>
   );
 }
 const Image = styled.img`
   @media (max-width: 768px) { 
-    height: 120;
+    height: fit-content;
     width: 130;
     text-align: center;
   }
@@ -66,31 +110,7 @@ const MainIcon = styled.div`
 
 	}
 `
-const MainTitle = styled.div`
-  color: #003468;
-  font-size: 3rem;
-  font-weight: 400;
-  ont-family: 'Open Sans',sans-serif;
 
-  @media (max-width: 768px) { 
-    color: #003468;
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-align: center;
 
-	}
-`
-
-const MainParagraph = styled.p`
-  color: #003468;
-  font-size: 1.1rem;
-  text-align: left;
-
-  @media (max-width: 768px) { 
-    color: #003468;
-    font-size: 1.1rem;
-    text-align: center;
-	}
-`
 
 export default Cards;
