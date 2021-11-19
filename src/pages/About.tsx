@@ -30,25 +30,27 @@ const LinkBtn = styled(Link)`
   color: #003468;
   background: white;
 
+
   @include tablet {
     font-size: 1.2rem;
     margin-top: 1px;
     background: #fba502;
+    text-align: center;
+    justify-content: center;
   }
 	@media (max-width: 768px) { 
 		width: 450px; 
-		padding: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
 	}
 
   @include phone {
     font-size: 1rem;
     margin-top: 1px;
+    text-align: center;
+    justify-content: center;
   }
-
-  // &:hover {
-  //   background-color: #003468;
-  //   color: white;
-  // }
 `
 const TextPara = styled.p`
   font-size: 1.2rem;
@@ -89,26 +91,60 @@ const HeaderTitle = styled.p`
   font-size: 2.6rem;
   margin-top: 0px;
   color: #fff;
+
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+	}
 `
 const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
   margin-top: -20px;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+	}
 `
 const AboutPara = styled.p`
   font-size: 1.2rem;
   color: #003468;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+	}
 `
 const TopPara = styled.p`
   color: #9aa8bd;
   font-size: 14px;
   letter-spacing: 1.2px;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+	}
 `
 const CardParagraph = styled.p`
   color: #003468;
   text-align: left;
   font-size: 1.1rem;
   margin-top: 15px;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+	}
 `
 const CardDiv = styled.div`
   border-style: outset;
@@ -153,11 +189,14 @@ const AboutGet = styled.p`
   color: #003468;
 `
 const AboutRole = styled.p`
-  font-size: 2.6rem;
-  margin-bottom: 10px;
-  color: #003468;
-  text-align: center;
-  text-decoration: underline;
+    color: #003468;
+    background: white;
+
+    @media (max-width: 768px) { 
+      text-align: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
 `
 
 const About: React.FC = () => {
@@ -173,9 +212,9 @@ const About: React.FC = () => {
                   <div className="columns">
                     <div className="column">
                       <div className="content">
-                        <TopPara className="subtitle is-6 has-text-left is-uppercase">Why we exist</TopPara>
-                        <HeaderTitle className="subtitle has-text-left is-2">About Us</HeaderTitle>
-                        <MainPara className="has-text-left">
+                        <TopPara className="subtitle is-6 is-uppercase">Why we exist</TopPara>
+                        <HeaderTitle className="subtitle is-2">About Us</HeaderTitle>
+                        <MainPara className="paragraph">
                           Seth Resources (Pty) Ltd, is a Botswana company founded in 2015; The company is incorporated under Botswana Law (100% citizen owned), to offer customers the widest range of services 
                           in respect of Procurement and Logistics of Oil & gas Derivatives including the storage, 
                           handling and distribution (Transportation) of various products according to the needs of the users and also expands the activities out of Botswana boundaries. 
@@ -324,7 +363,7 @@ const About: React.FC = () => {
                   <div className="columns">
                     <div className="column">
                       <div className="content">
-                        <AboutPara className="subtitle has-text-left">
+                        <AboutPara className="subtitle">
                           <br />Seth Resources (Pty) Ltd, has found it suitable to adhere calling by the Government of Botswana to perform different levels of investment, 
                           Product and service availability, right quantity, good quality and meet standards of service, fair pricing and reasonable cost 
                           of products and services. <br /><br />The Company intends to set up an autonomous business unit whose focus is to position Seth Resources 
@@ -374,8 +413,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Who we are</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                <AboutRole className="title is-4 is-underlined has-text-centered">Who we are</AboutRole>
+                                <CardParagraph className="has-text-centered">
                                   Find out about our company, our business, our team at Seth Resources, and how we are working to power progress together with more and cleaner energy solutions.
                                 </CardParagraph>
                               </div>
@@ -391,8 +430,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <LinkBtn to="" className="title is-4 is-underlined has-text-centered">What we do</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                <AboutRole className="title is-4 is-underlined has-text-centered">What we do</AboutRole>
+                                <CardParagraph className="has-text-centered">
                                   From our very embryonic inception, our primary aim has been to meet the world's growing demand for more and cleaner energy solutions in ways that are eco-friendly, financially and 
                                   socially responsible.
                                 </CardParagraph>
@@ -409,8 +448,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Our Values</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                <AboutRole className="title is-4 is-underlined has-text-centered">Our Values</AboutRole>
+                                <CardParagraph className="has-text-centered ">
                                   Our ideas, visions, and technologies are driven and powered by our unique company culture, set of core values - 
                                   honesty, integrity, inclusive and respecting of all people.  
                                 </CardParagraph>
@@ -431,8 +470,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Leadership</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                <AboutRole className="title is-4 is-underlined has-text-centered">Leadership</AboutRole>
+                                <CardParagraph className="has-text-centered">
                                   Every day, our team of leaders are making countless decisions and facing problems they’ve never encountered before. 
                                   What worked yesterday can change overnight. The speed is relentless, the stakes are high, but the rewards are great for those who can lead a team to consistently achieve extraordinary results.
                                   Read about our co-founders, our Executive committee, and Board of Directors.
@@ -450,8 +489,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Our major projects</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                <AboutRole className="title is-4 is-underlined has-text-centered">Our major projects</AboutRole>
+                                <CardParagraph className="has-text-centered">
                                   As we continue to evolve, our client partnership across various industries, government and mining continues to grow in the region and beyond. 
                                 </CardParagraph>
                               </div>
@@ -467,8 +506,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Events</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                <AboutRole className="title is-4 is-underlined has-text-centered">Events</AboutRole>
+                                <CardParagraph className="has-text-centered">
                                   Our current and upcoming events brings together deverse teams from the government, business,
                                   academia and other industry to discuss eco-friendly energy future.   
                                 </CardParagraph>
@@ -505,8 +544,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <LinkBtn to="/careers-at-srp" className="title is-4 is-underlined has-text-centered">Careers</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                <AboutRole className="title is-4 is-underlined has-text-centered">Careers</AboutRole>
+                                <CardParagraph className="has-text-centered">
                                   Discover the impact you can make with a career at Seth Resources.
                                 </CardParagraph>
                               </div>
@@ -522,8 +561,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                  <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Media</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                  <AboutRole className="title is-4 is-underlined has-text-centered">Media</AboutRole>
+                                <CardParagraph className="has-text-centered">
                                   Discover our public content releases or find media relations teams contact details. 
                                 </CardParagraph>
                               </div>
@@ -539,8 +578,8 @@ const About: React.FC = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Sustainability</LinkBtn>
-                                <CardParagraph className="has-text-left">
+                                <AboutRole className="title is-4 is-underlined has-text-centered">Sustainability</AboutRole>
+                                <CardParagraph className="has-text-centered">
                                   Discover our passion to be an eco-friendly driven company and our awareness to make a positive contribution towards climate change. 
                                 </CardParagraph>
                               </div>

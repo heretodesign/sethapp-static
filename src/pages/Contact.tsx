@@ -12,6 +12,103 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import ApiService from '.././services/ApiService'
 import ContactForm from '../components/shared/ContactForm'
 
+const LinkBtn = styled(Link)`
+  color: #003468;
+  background: white;
+
+  @include tablet {
+    font-size: 1.2rem;
+    margin-top: 1px;
+    background: #fba502;
+  }
+	@media (max-width: 768px) { 
+		width: 450px; 
+		padding: 10px;
+	}
+
+  @include phone {
+    font-size: 1rem;
+    margin-top: 1px;
+  }
+
+  // &:hover {
+  //   background-color: #003468;
+  //   color: white;
+  // }
+`
+
+const Section = styled.section`
+  background: #003468;
+  color: white;
+`
+const HeaderTitle = styled.p`
+  font-size: 2.6rem;
+  margin-top: 0px;
+  color: #fff;
+`
+const MainPara = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: -20px;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+  }
+`
+const TextPara = styled.p`
+  font-size: 1.2rem;
+  color: #003468;
+`
+const Response = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: bold;
+`
+const TopPara = styled.p`
+  color: #9aa8bd;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+      text-align: center;
+      justify-content: center;
+}
+`
+const ResHeader = styled.ul`
+  margin-top: 20px;
+  color: #fff;
+`
+const ResParagraph = styled.p`
+  margin-top: 20px;
+  color: #fff;
+`
+const ParagraphSt = styled.p`
+  font-size: 1.2rem;
+  color: #003468;
+`
+const TextColor = styled.p`
+  color: #003468;
+`
+const TextTitleColor = styled.p`
+  color: #003468;
+  font-size: 1.4rem;
+  font-weight: bold;
+`
+const Button = styled.p`
+    background: #003468;
+    color: white;
+`
+const bkStyle = {
+    background: '#003468',
+    color: 'white'
+}
+
 const Contact: React.FC = () => {
     let history = useHistory();
     return (
@@ -26,9 +123,9 @@ const Contact: React.FC = () => {
                   <div className="columns">
                     <div className="column">
                       <div className="content">
-                        <TopPara className="subtitle is-6 has-text-left is-uppercase">Ways to reach us</TopPara>
-                        <HeaderTitle className="subtitle has-text-left is-2">Contact Us – at Seth Resources Petroleum</HeaderTitle>
-                        <MainPara className="has-text-left">
+                        <TopPara className="subtitle is-6  is-uppercase">Ways to reach us</TopPara>
+                        <HeaderTitle className="subtitle  is-2">Contact Us – at Seth Resources Petroleum</HeaderTitle>
+                        <MainPara className="paragraph">
                           Our world class team of dedicated support will get back to within the next 2 hours upon receiving your inquiry.
                         </MainPara>
                       </div>
@@ -96,88 +193,7 @@ const Contact: React.FC = () => {
     )
 }
 
-const LinkBtn = styled(Link)`
-  color: #003468;
-  background: white;
 
-  @include tablet {
-    font-size: 1.2rem;
-    margin-top: 1px;
-    background: #fba502;
-  }
-	@media (max-width: 768px) { 
-		width: 450px; 
-		padding: 10px;
-	}
-
-  @include phone {
-    font-size: 1rem;
-    margin-top: 1px;
-  }
-
-  // &:hover {
-  //   background-color: #003468;
-  //   color: white;
-  // }
-`
-
-const Section = styled.section`
-  background: #003468;
-  color: white;
-`
-const HeaderTitle = styled.p`
-  font-size: 2.6rem;
-  margin-top: 0px;
-  color: #fff;
-`
-const MainPara = styled.p`
-  font-size: 1.2rem;
-  color: #fff;
-  margin-top: -20px;
-`
-const TextPara = styled.p`
-  font-size: 1.2rem;
-  color: #003468;
-`
-const Response = styled.p`
-  font-size: 1.2rem;
-  color: #fff;
-  margin-top: 20px;
-  font-weight: bold;
-`
-const TopPara = styled.p`
-  color: #9aa8bd;
-  font-size: 14px;
-  letter-spacing: 1.2px;
-`
-const ResHeader = styled.ul`
-  margin-top: 20px;
-  color: #fff;
-`
-const ResParagraph = styled.p`
-  margin-top: 20px;
-  color: #fff;
-`
-const ParagraphSt = styled.p`
-  font-size: 1.2rem;
-  color: #003468;
-`
-const TextColor = styled.p`
-  color: #003468;
-`
-const TextTitleColor = styled.p`
-  color: #003468;
-  font-size: 1.4rem;
-  font-weight: bold;
-`
-const Button = styled.p`
-    background: #003468;
-    color: white;
-`
-const bkStyle = {
-    background: '#003468',
-    color: 'white'
-}
 
 
 export default Contact;

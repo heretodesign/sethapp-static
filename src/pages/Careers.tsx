@@ -12,6 +12,13 @@ const TopPara = styled.p`
   color: #9aa8bd;
   font-size: 14px;
   letter-spacing: 1.2px;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+      text-align: center;
+      justify-content: center;
+  }
 `
 const Section = styled.section`
   background: #003468;
@@ -43,6 +50,13 @@ const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
   margin-top: -20px;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+  }
 `
 
 const JobTitle = styled.p`
@@ -67,13 +81,6 @@ const ColorStyle = styled.p`
   font-size: 1.4rem;
   font-weight: bolder;
 `
-
-const bkStyle = {
-    background: '#003468',
-    // background: '#1167bf',
-    color: 'white'
-}
-  
 const LinkBtn = styled(Link)`
   background: #003468;
   color: white;
@@ -138,9 +145,9 @@ const Careers: React.FC = () => {
                   <div className="columns">
                     <div className="column">
                       <div className="content">
-                        <TopPara className="subtitle is-6 has-text-left is-uppercase">Join our team</TopPara>
-                        <HeaderTitle className="subtitle has-text-left is-2">Opportunities – at Seth Resources Petroleum</HeaderTitle>
-                        <MainPara className="has-text-left">
+                        <TopPara className="subtitle is-6 is-uppercase">Join our team</TopPara>
+                        <HeaderTitle className="subtitle is-2">Opportunities – at Seth Resources Petroleum</HeaderTitle>
+                        <MainPara className="paragraph">
                           In a dynamic atmosphere, diverse teams collaborate on projects, taking ideas from the drawing board to implementation. We're all curious, and everyone is hungry for a challenge.
                           <br />
                           <br />

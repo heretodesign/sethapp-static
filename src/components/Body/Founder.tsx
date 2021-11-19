@@ -32,15 +32,31 @@ const ParagraphStyle = styled.p`
   align-text: left;
   background-color: transparent;
 
-
   @media (max-width: 768px) { 
-    padding: 0rem 0rem;
     align-text: center;
     background-color: transparent;
     font-size: 1rem;
+
  }
 `
 
+const Blockquote = styled.blockquote`
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  align-text: left;
+  background-color: transparent;
+  padding: 1.25em 2.2em;
+
+  @media (max-width: 768px) { 
+    padding: 1.25em 2em;
+    align-text: center;
+    background-color: transparent;
+    font-size: 1rem;
+
+  }
+`
 const H4 = styled.p`
   margin-top: 10px;
   color: #fba502;
@@ -59,7 +75,7 @@ const Founder: React.FC = () => {
               <ParentDiv className="contents" id="contentSides">
                 <ColorStyle className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Our Pioneers Message</ColorStyle>
                 <ParagraphStyle className="has-text-lefts ">
-                  <blockquote style={{ backgroundColor: "transparent", fontWeight: "bold", borderLeftWidth: "0px" }}>“Our vision has always been and is to resource and supply sufficient oil and petroleum resources to enable our 
+                  <blockquote style={{ backgroundColor: "transparent", fontWeight: "bold", }}>“Our vision has always been and is to resource and supply sufficient oil and petroleum resources to enable our 
                     partners and clients throughout the region to function in a time to great stress and uncertainty. 
                   During the global pandemic season, we've further reiterated our ambition to scale our business and acquire more clients, 
                   and therefore create job opportunities for the right talent to join our growing SRP family.”</blockquote>  

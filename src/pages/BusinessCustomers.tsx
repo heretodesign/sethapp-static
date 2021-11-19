@@ -18,16 +18,66 @@ const HeaderTitle = styled.p`
   font-size: 2.6rem;
   margin-top: 0px;
   color: #fff;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+	}
+`
+const LinkBtn = styled(Link)`
+  color: #003468;
+  background: white;
+
+  @include tablet {
+    font-size: 1.2rem;
+    margin-top: 1px;
+    background: #fba502;
+  }
+	@media (max-width: 768px) { 
+		width: 450px; 
+		padding: 10px;
+	}
+
+  @include phone {
+    font-size: 1rem;
+    margin-top: 1px;
+  }
+`
+const CardHeading = styled.p`
+    color: #003468;
+    background: white;
+
+    @media (max-width: 768px) { 
+      text-align: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
 `
 const TopPara = styled.p`
-  color: #9aa8bd;
-  font-size: 14px;
-  letter-spacing: 1.2px;
+    color: #9aa8bd;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    justify-content: left;
+
+    @media (max-width: 768px) { 
+        text-align: center;
+        justify-content: center;
+	}
 `
 const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
   margin-top: -20px;
+  text-align: left;
+  justify-content: left;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+    justify-content: center;
+  }
 `
 const CardParagraph = styled.p`
   color: #003468;
@@ -48,9 +98,9 @@ const BusinessCustomers = () => {
                             <div className="columns">
                                 <div className="column">
                                 <div className="content">
-                                    <TopPara className="subtitle is-6 has-text-left is-uppercase">Successful together</TopPara>
-                                    <HeaderTitle className="subtitle has-text-left is-2">To all our customers</HeaderTitle>
-                                    <MainPara className="has-text-left">
+                                    <TopPara className="subtitle is-6 is-uppercase">Successful together</TopPara>
+                                    <HeaderTitle className="subtitle is-2">To all our customers</HeaderTitle>
+                                    <MainPara className="paragraph">
                                         Our collective team effort is oriented and geared towards providing our dedicated customers with a wide range of products and services covering the entire energy chain. 
                                     <br />
                                     <br />
@@ -136,7 +186,7 @@ const BusinessCustomers = () => {
                                             <div className="card-content">
                                                 <div className="media">
                                                 <div className="media-content">
-                                                    <LinkBtn to="/careers-at-srp" className="title is-4 is-underlined has-text-centered">Power</LinkBtn>
+                                                    <CardHeading className="title is-4 is-underlined has-text-centered">Power</CardHeading>
                                                     {/* <CardParagraph className="has-text-left">
                                                         Discover the impact you can make with a career at Seth Resources.
                                                     </CardParagraph> */}
@@ -153,7 +203,7 @@ const BusinessCustomers = () => {
                                 <div className="card-content">
                                     <div className="media">
                                     <div className="media-content">
-                                        <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Aviation</LinkBtn>
+                                        <CardHeading className="title is-4 is-underlined has-text-centered">Aviation</CardHeading>
                                         {/* <CardParagraph className="has-text-left">
                                             Discover our public content releases or find media relations teams contact details. 
                                         </CardParagraph> */}
@@ -170,7 +220,7 @@ const BusinessCustomers = () => {
                                 <div className="card-content">
                                     <div className="media">
                                     <div className="media-content">
-                                        <LinkBtn to="" className="title is-4 is-underlined has-text-centered">Mining</LinkBtn>
+                                        <CardHeading className="title is-4 is-underlined has-text-centered">Mining</CardHeading>
                                         {/* <CardParagraph className="has-text-left">
                                             Discover our passion to be an eco-friendly driven company and our awareness to make a positive contribution towards climate change. 
                                         </CardParagraph> */}
@@ -307,25 +357,7 @@ const ColorStyle = styled.p`
   font-size: 1.4rem;
   font-weight: bolder;
 `
-const LinkBtn = styled(Link)`
-  color: #003468;
-  background: white;
 
-  @include tablet {
-    font-size: 1.2rem;
-    margin-top: 1px;
-    background: #fba502;
-  }
-	@media (max-width: 768px) { 
-		width: 450px; 
-		padding: 10px;
-	}
-
-  @include phone {
-    font-size: 1rem;
-    margin-top: 1px;
-  }
-`
 const TextPara = styled.p`
   font-size: 1.2rem;
   color: #003468;
